@@ -29,9 +29,9 @@ describe('generator-hippie:app', () => {
         assert.fileContent([
             ['index.html', '<title>hippie-afonso</title>'],
             ['hippie-afonso.html', '<dom-module id="hippie-afonso">'],
-            ['bower.json', '"name": "hippie-afonso"'],
             ['test/index.html', '<title>hippie-afonso tests</title>'],
             ['test/hippie-afonso_test.html', '<test-fixture id="hippie-afonso">']
         ]);
+        assert.jsonFileContent('bower.json', {name: 'hippie-afonso'});
     });
 });

@@ -49,5 +49,12 @@ class App extends Generator {
       {name:this.options.elemName}
     );
   }
+  install() {
+    this.installDependencies({
+      npm: false,
+      bower: true,
+      yarn: false
+    });
+  }
 }
 module.exports = App;
