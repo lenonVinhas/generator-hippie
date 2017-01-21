@@ -1,0 +1,28 @@
+{
+  "name": "hippie-<%= name %>",
+  "description": "Generator for create hippie elements using Polymer 1x",
+  "version": "0.1.0",
+  "keywords": [
+    "polymer",
+    "web-components",
+    "hippie"
+  ],
+  "authors": [
+    "Afonso Pacifer <afonsopacifer@live.com>"
+  ],
+  "main": "hippie-<%= name %>.html",
+  "homepage": "https://github.com/hippie-elements/hippie-element-boilerplate",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hippie-elements/hippie-element-boilerplate"
+  },
+  "license": "https://github.com/hippie-elements/hippie-license/LICENSE.md",
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.5.0",
+    "web-component-tester": "^5.0.0"
+  }
+}

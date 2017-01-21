@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>hippie-<%= name %> tests</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../../web-component-tester/browser.js"></script>
+
+    <link rel="import" href="../hippie-<%= name %>.html">
+  </head>
+  <body>
+
+    <test-fixture id="hippie-<%= name %>">
+      <template>
+        <hippie-<%= name %>></hippie-<%= name %>>
+      </template>
+    </test-fixture>
+
+    <script>
+      suite('<hippie-<%= name %>>', function() {
+
+        var element;
+
+        setup(function() {
+          element = fixture('hippie-<%= name %>');
+        });
+
+        test('instantiating the element works', function() {
+          assert.equal(element.is, 'hippie-<%= name %>');
+        });
+
+      });
+    </script>
+  </body>
+</html>

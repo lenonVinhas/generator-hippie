@@ -1,0 +1,48 @@
+<link rel="import" href="../components/polymer/polymer.html">
+
+<dom-module id="hippie-<%= name %>">
+
+  <template>
+
+    <style>
+      :host {
+        --hippie-<%= name %>-text-color-default: #fff;
+        --hippie-element-background-color-default: #f06;
+      }
+
+      div {
+        display: inline-block;
+        padding: 20px;
+        @apply (--hippie-<%= name %>-text);
+        color: var(
+          --hippie-<%= name %>-text-color,
+          var(--hippie-<%= name %>-text-color-default)
+        );
+        background-color: var(
+          --hippie-<%= name %>-background-color,
+          var(--hippie-<%= name %>-background-color-default)
+        );
+      }
+    </style>
+
+    <div>
+      {{prop}}
+      <content></content>
+      boilerplate
+    </div>
+
+  </template>
+
+  <script>
+    Polymer({
+      is: "hippie-<%= name %>",
+      properties: {
+        prop: {
+          type: String,
+          value: "foo"
+        }
+      }
+    })
+  </script>
+
+</dom-module>

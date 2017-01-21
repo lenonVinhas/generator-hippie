@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html>
+
+  <head>
+
+    <title>hippie-<%= name %></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="../webcomponentsjs/webcomponents.js"></script>
+    <link rel="import" href="hippie-<%= name %>.html">
+
+    <style is="custom-style">
+      hippie-<%= name %> {
+        --hippie-<%= name %>-text-color: #000;
+        --hippie-<%= name %>-background-color: #ffc208;
+        --hippie-<%= name %>-text: {
+          font-size: 18px;
+        };
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <hippie-<%= name %> prop="hippie">
+      element
+    </hippie-<%= name %>>
+
+  </body>
+</html>
